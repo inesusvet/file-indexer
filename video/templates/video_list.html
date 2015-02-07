@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <article>
+        <section>
+            {% for video in video_list %}
+                <div class="video">
+                    <a href="{{ video.get_uri }}">{{ video }}</a>
+                </div>
+            {% endfor %}
+        </section>
+    </article>
+{% endblock %}
